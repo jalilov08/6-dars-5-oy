@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="uz">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./src/output.css" />
+      <title>5-oy 6-dars</title>
+    </head>
+    <body class="bg-gray-700">
+      <div
+        class="max-w-5xl mx-auto px-2 bg-stone-400 mt-20 pt-1 pb-1 rounded-xl"
+      >
+        <div class="flex justify-between py-10 items-center">
+          <button
+          id="again-btn"
+            class="border-2 px-3 py-2 rounded-lg text-slate-100 hover:bg-gray-500"
+          >
+            Again
+          </button>
+          <p class="text-slate-100">
+            Guess number between
+            <span class="font-bold text-neutral-100">1 and 20</span>
+          </p>
+        </div>
+        <div
+          class="mx-auto mt-12 text-4xl w-36 h-36 bg-white items-center justify-center flex rounded-xl"
+        >
+          <span id="result">?</span>
+        </div>
+
+        <div class="flex justify-between my-20">
+          <form>
+            <input id="guess-number" class="border px-2 py-4 text-2xl" type="number" />
+
+            <button
+              class="border-2 px-3 py-2 rounded-lg text-slate-100 hover:bg-gray-500"
+            >
+              Again
+            </button>
+          </form>
+
+          <div>
+            <h1 class="text-slate-100" id="status-game">Start Game...</h1>
+            <p class="text-slate-100" >Attemps: <span id="attemps">5</span></p>
+            <p class="text-slate-100">Rekord: <span  id="rekord">0</span></p>
+          </div>
+        </div>
+      </div>
+      <script src="./app.js"></script>
+    </body>
+  </html>
+</html>
